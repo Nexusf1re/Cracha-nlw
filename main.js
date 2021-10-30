@@ -22,7 +22,7 @@ function changePersonalInfos() {
     'A mais linda, deslumbrante fotógrafa já existente, faça já seu orçamento com essa perfeição divina :)'
   gitName.textContent = 'Marido_dela'
 }
-changePersonalInfos()
+//changePersonalInfos()
 
 function getGitHubProfileInfos() {
   const url = `https://api.github.com/users/${LinksSocialMedias.github}`
