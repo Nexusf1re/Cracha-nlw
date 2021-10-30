@@ -29,10 +29,10 @@ function getGitHubProfileInfos() {
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      //mainName.textContent = data.name
+      mainName.textContent = data.name
     })
 
 }
-getGitHubProfileInfos()
+//getGitHubProfileInfos()
 
 //Arrow Function
