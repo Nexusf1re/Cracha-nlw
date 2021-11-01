@@ -1,0 +1,95 @@
+/* CSS Significado
+        Cascating Style Sheet
+        Folha de estilo em cascata
+      */
+
+* {
+  margin: 0;
+}
+html,
+body {
+  --black: hsl(240, 6%, 13%);
+  --grey: hsl(240, 9%, 89%);
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*background-image: 'C:\Users\Matteus\Documents\OneDrive\PESSOAL USERS\Matteus\Programação\HTML\NLW\Arquivos\Nature 4k.jpg Try to put images of Background*/
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background: url(arquivos/Background.svg);
+  width: 375px;
+  height: 812px;
+  /*Modelo do formato do Plano*/
+}
+
+.container {
+  max-width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  color: var(--grey);
+  /*Conteúdo geral do Css*/
+}
+.profile {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+  position: relative;
+  /*Foto e selo*/
+}
+.profile span {
+  position: absolute;
+  margin-top: -15px;
+  z-index: 1;
+  /*selo*/
+}
+.profile > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+  clip-path: polygon(50% 0, 100% 25%, 100% 70%, 50% 100%, 0 70%, 0 25%);
+  /*Foto principal*/
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  /*Nome principal*/
+}
+
+h1 {
+  font-style: bold;
+  margin-top: 1.5rem;
+  /*Nome principal*/
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+  margin-top: 0.25rem;
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  /*Referente a Link do git hub*/
+}
+
+p {
+  margin-top: 2rem;
+  /*Frase principal*/
+}
+
+ul {
+  margin-top: 4rem;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  /*Lista de links das midias sociais*/
+}
