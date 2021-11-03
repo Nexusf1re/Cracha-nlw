@@ -12,7 +12,7 @@ function changeSocialLinks() {
   }
 }
 
-changeSocialLinks()
+//changeSocialLinks()
 
 function changePersonalInfos() {
   mainName.textContent = 'Bianca Rosendo'
@@ -22,16 +22,15 @@ function changePersonalInfos() {
     'A mais linda, deslumbrante fotógrafa já existente, faça já seu orçamento com essa perfeição divina :)'
   gitName.textContent = 'Marido_dela'
 }
-changePersonalInfos()
+//changePersonalInfos()
 
 function getGitHubProfileInfos() {
   const url = `https://api.github.com/users/${LinksSocialMedias.github}`
   fetch(url)
     .then(response => response.json())
     .then(data => {
-      //mainName.textContent = data.name
+      mainName.textContent = data.name
     })
 }
 //getGitHubProfileInfos()
 
-//Arrow Function
