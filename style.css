@@ -3,6 +3,10 @@
         Folha de estilo em cascata
       */
 
+/*Para Dispositovs móveis*/
+ @media screen and (max-width: 599px) {
+        
+      }
 * {
   margin: 0;
 }
@@ -20,6 +24,7 @@ body {
 body {
   display: grid;
   place-items: center;
+  background-color: #121214;
 }
 
 main {
